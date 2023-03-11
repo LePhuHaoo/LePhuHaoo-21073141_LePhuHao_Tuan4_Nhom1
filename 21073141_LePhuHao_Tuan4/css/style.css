@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    background-color: beige;
+}
+.bai_11{
+    border: 1px solid black;
+    width: 60%;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.bai_11 , .bai_12 ,.bai_14, .bai_15, .bai_16, .bai_17, .bai_18, .bai_19 , .bai_20
+{
+    border: 1px solid black;
+    width: 60%;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+.bai_11 .footer{
+    /* position: fixed;
+    width: 41.6%;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    margin-top: 6px;
+    display: block;
+    height: 50px; */
+    position: fixed;
+    display: block;
+    width: 41.6%;
+    background-color: green;
+    color: white;
+    bottom: 0;
+}
+
+.bai_12 .ribbon-container{
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 5px;
+}
+.ribbon {
+    width: 150px;
+    height: 150px;
+    /* background: lightblue; */
+    position: absolute;
+    overflow: hidden;
+}
+.bai_12 .ribbon-container .ribbon span{
+    width: 225px;
+    background: red;
+    display: block;
+    position: absolute;
+    padding: 15px 0px;
+    top: 30px;
+    left: -50px;
+    transform: rotate(-45deg);
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.ribbon::after{
+    content: '';
+    border-top: 5px solid blue;
+    border-top: 5px solid blue;
+    border-top: 5px solid blue;
+    border-top: 5px solid blue;
+    position: absolute;
+}
+
+.bai_13{
+    border: 1px solid black;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 350px;
+}
+.bai_13 .gallery{
+    margin: 10px;
+    border: 1px solid blue;
+    float: left;
+    width: 180px;
+}
+.bai_13 .gallery:hover {
+    border: 1px solid black;
+    transform: scale(1.2);
+}
+.bai_13 .gallery img {
+    width: 100%;
+}
+.bai_13 .desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.bai_14 .transition{
+    width: 300px;
+    height: 170px;
+    background: #6FAC21;
+    opacity: 0.8;
+    border-radius: 10px;
+    transition: all 2s linear;
+    margin: 50px 50px;
+    text-align: justify;
+    border-bottom: dashed;
+    border-left: dashed;
+    border-top: double;
+    border-right: dashed;
+    border-color: red;
+}
+.bai_14 .transition:hover{
+    transform: scale(2) rotate(360deg);
+    -webkit-transform: scale(2) rotate(360deg);
+    -o-transform: scale(2) rotate(360deg);
+    -ms-transform: scale(2) rotate(360deg);
+    -moz-transform: scale(2) rotate(360deg);
+    background: #1EC7E6;
+    opacity: 0.8;
+}
+#transition{
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 16px;
+    transition: all 2s;
+}
+input[type=text]{
+    width: 10px;
+    /* -webkit-transform: width .35s ease-in-out; */
+    transition: width .35s ease-in-out;
+}
+input[type=text]:focus{
+    width: 15px;
+   background-color: lightgreen;
+}
+
+.bai_16 .Menu_ChieuDoc{
+    font-size: 15px;
+}
+.Menu_ChieuDoc ul{
+    background: #0d90df;
+    width: 100px;
+    padding: 0;
+    list-style-type: none ;
+}
+.Menu_ChieuDoc ul li{
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 1em;
+    border-radius: 10px;
+    border: 2px dashed #ffffff;
+    color: white;
+    text-shadow: -1px -1px #aa3030;
+    font-weight: normal;
+    text-align: center;
+    font-weight: bold;
+}
+.Menu_ChieuDoc ul li a{
+    text-decoration: none;
+}
+
+.bai_17 .Menu_NgangCap1 ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background: red;
+    text-align: center;
+}
+.bai_17 .Menu_NgangCap1 ul li{
+    display: inline-table;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+}
+.bai_17 .Menu_NgangCap1 ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+}
+.bai_17 .Menu_NgangCap1 a:hover{
+    background: green;
+    color: darksalmon;
+}
+
+.bai_18 .Menu_Cap2 ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background: green;
+    text-align: center;
+}
+.bai_18 .Menu_Cap2 ul li{
+    display: inline-table;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+.bai_18 .Menu_Cap2 ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+.bai_18 .Menu_Cap2 a:hover{
+    background: green;
+    color: orange;
+}
+.bai_18 .Menu_Cap2 ul li > .sub-menu{
+    display: none;
+    position: absolute;
+}
+.bai_18 .Menu_Cap2 ul li:hover .sub-menu{
+    display: block;
+}
+
+.bai_19 .Menu ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background: rgb(45, 44, 44);
+}
+.bai_19 .Menu ul li{
+    display: inline-table;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-right: 1px solid whitesmoke;
+    position: relative;
+}
+.bai_19 .Menu ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+.bai_19 .Menu a:hover{
+    background: rgb(96, 214, 96)
+}   
+.bai_19 .Menu ul li > .menu-2{
+    display: none;
+    position: absolute;
+}
+.bai_19 .Menu li:hover ul{
+    display: block;
+    position: absolute;
+}
+.bai_19 li:hover li{
+    background-color: silver;
+    list-style: none;
+}
+.bai_19 li:hover li:hover{
+    background-color: green;
+}
+.bai_19 li:hover a{
+    color: black;
+    text-decoration: none;
+}
+.bai_19 li:hover a:hover{
+    color: white;
+}
+
+.bai_20 .Menu-20{
+    font-size: 15px;
+}
+.bai_20 .Menu-20 ul{
+    background: #0d90df;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none ;
+}
+.bai_20 .Menu-20 ul li{
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 1em;
+    border-radius: 10px;
+    border: 2px dashed #ffffff;
+    color: white;
+    text-shadow: -1px -1px #aa3030;
+    font-weight: normal;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+.bai_20 .Menu-20 ul li a{
+    color: blue;
+    text-decoration: none;
+    display: block;
+}
+.bai_20 .Menu-20 a:hover{
+    background: white;
+}
+.bai_20 .sub-20{
+    position: absolute;
+    left: 200px;
+    top: 0;
+    display: none;
+}
+.bai_20 ul li:hover .sub-20{
+    display: block;
+}
